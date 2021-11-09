@@ -1,0 +1,21 @@
+<ng-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)" (particlesInit)="particlesInit($event)"></ng-particles>
+
+<div id="particles-js">
+  ﻿<!-- nav -->
+  <nav class="navbar navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav order-0" style="display: flex; flex-direction: row">
+      <a class="nav-item nav-link" routerLink="/" *ngIf="isUser">Accueil</a>
+      <a class="nav_item nav-link" routerLink="/congeUser" *ngIf="isUser">Mes congés</a>
+      <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Accueil</a>
+      <a class="nav_item nav-link" routerLink="/congeAdmin" *ngIf="isAdmin">Congés</a>
+    </div>
+    <div class="navbar-nav order-3">
+      <a class="nav-item nav-link" routerLink="/" (click)="logout()">Se déconnecter</a>
+    </div>
+  </nav>
+
+  <!-- main app container -->
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+
+  <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; justify-content: center; justify-self: center">
+    <h1 style="align-self: center">Bonjour {{currentUser.name}}</h1>
+    <h1 style="align-self: center" *ngIf="activePompier != undefined && activePompier.name !== currentUser.name">Le plombier anjourd'hui est {{activePompier.name}}</h1>
+    <h1 style="align-self: center" *ngIf="activePompier != undefined && activePompier.name === currentUser.name">Le plombier est vous aujourd'hui</h1>
+  </div>
+

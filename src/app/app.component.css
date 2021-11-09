@@ -1,0 +1,20 @@
+p {
+  font-family: Lato;
+}
+.divCenter{
+  text-align: center;
+  width: 400px;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  opacity: 0.15;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a {
+  margin: 1px 10px;
+}
